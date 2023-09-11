@@ -13,7 +13,7 @@ while (n <= 7)
 {
 	while (m <= 8)
 	{
-		while (x <= 9) 
+		while (x <= 9)
 		{
 			putchar(48 + n);
 			putchar(48 + m);
@@ -29,6 +29,8 @@ while (n <= 7)
 		x = m + 1;
 	}
 	n++;
+	m = n + 1;
+	x = m + 1;
 }
 putchar('\n');
 return (0);

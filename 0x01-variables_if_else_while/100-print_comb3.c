@@ -15,7 +15,7 @@ while (n <= 8)
 	{
 		putchar(48 + n);
 		putchar(48 + m);
-		if (m != 8 && n != 9)
+		if (n != 8 && m != 9)
 		{
 			putchar(',');
 			putchar(' ');

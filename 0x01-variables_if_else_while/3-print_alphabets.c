@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* main - main block
-* Description: print alphabet in lowercase.
-* Return: 0
+*main - main block
+*Description: print alphabet in lowercase.
+*Return: 0
 */
 int main(void)
 {
@@ -18,6 +18,6 @@ char b = 'A';
 		putchar(b);
 		b++;
 	}
-	putchar('\n');
-	return (0);
+putchar('\n');
+return (0);
 }

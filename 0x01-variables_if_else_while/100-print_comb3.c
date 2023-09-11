@@ -9,17 +9,20 @@ int main(void)
 {
 int n = 0;
 int m = 0;
-while (n <= 9)
+while (n <= 8)
 {
 	while (m <= 9)
 	{
 		putchar(48 + n);
 		putchar(48 + m);
-		putchar(',');
-		putchar(' ');
+		if (m != 8 && n != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		m++;
 	}
-	m = 0;
+	m = n+1;
 	n++;
 }
 putchar('\n');

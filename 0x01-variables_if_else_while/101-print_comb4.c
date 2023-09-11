@@ -18,8 +18,11 @@ while (n <= 7)
 			putchar(48 + n);
 			putchar(48 + m);
 			putchar(48 + x);
-			putchar(',');
-			putchar(' ');
+			if (n != 7 || m != 8 || x != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 			x++;
 		}
 		m++;

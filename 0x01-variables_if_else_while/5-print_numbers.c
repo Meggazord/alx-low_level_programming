@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - main block
- * Description: print all numbers greater than 0 less than 10
- * Return: 0
- */
+* main - main block
+* Description: print all numbers greater than 0 less than 10
+* Return: 0
+*/
 int main(void)
 {
 int n = 0;

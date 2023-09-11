@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - main block
- * Description: prints all numbers of lower case 16
- * Return: 0
- */
+* main - main block
+* Description: prints all numbers of lower case 16
+* Return: 0
+*/
 int main(void)
 {
 char n = '0';

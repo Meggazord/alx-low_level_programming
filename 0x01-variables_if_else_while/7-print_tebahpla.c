@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - main block
- * Description: print lower case alphabet backwards
- * Return: 0
- */
+* main - main block
+* Description: print lower case alphabet backwards
+* Return: 0
+*/
 int main(void)
 {
 char a = 'z';

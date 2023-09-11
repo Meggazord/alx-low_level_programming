@@ -6,14 +6,14 @@
 */
 int main(void)
 {
-char n = '0';
-char m = '1';
-char x = '2';
-while (n <= '7')
+int n = 0;
+int m = 1;
+int x = 2;
+while (n <= 7)
 {
-	while (m <= '8')
+	while (m <= 8)
 	{
-		while (x <= '9') 
+		while (x <= 9) 
 		{
 			putchar(n);
 			putchar(m);
@@ -23,7 +23,7 @@ while (n <= '7')
 			x++;
 		}
 		m++;
-		x = m + '1';
+		x = m + 1;
 	}
 	n++;
 }

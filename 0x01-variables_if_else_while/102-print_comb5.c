@@ -1,37 +1,47 @@
 #include <stdio.h>
 /**
- * main - main block
- * Description: print all combination of 2 digit numbers
- * Return: 0
- */
+* main - main block
+* Description: print all combination of 2 digit numbers
+* Return: 0
+*/
 int main(void)
 {
-char n = '0';
-char m = '0';
-char x = '0';
-char y = '0';
-while (n <= '9')
+	int c = 0;
+	int f_d;
+	int l_d;
+
+	int c2;
+	int f_d2;
+	int l_d2;
+
+	while (c <= 98)
 	{
-	while (m <= '9')
+		f_d = (c / 10 + '0');
+		l_d = (c % 10 + '0');
+		c2 = 0;
+		while (c2 <= 99)
 		{
-		while (x <= '9') 
+			f_d2 = (c2 / 10 + '0');
+			l_d2 = (c2 % 10 + '0');
+
+			if (c < c2)
 			{
-			while (y <= '9')
-				putchar(n);
-				putchar(m);
+				putchar(f_d);
+				putchar(l_d);
 				putchar(' ');
-				putchar(x);
-				putchar(y);
-				putchar(',');
-				putchar(' ');
-				y++;
-			}	
-		y = '0';
-		x++;
+				putchar(f_d2);
+				putchar(l_d2);
+
+				if (c != 98)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			c2++;
 		}
-	m = '0';
-	x++;
+		c++;
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }

@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
  * main - main block
  * Description: print alphabet in lowercase.
  * Return: 0
  */
-
 int main(void)
 {
 char a = 'a';
@@ -21,5 +19,5 @@ char b = 'A';
 		b++;
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }

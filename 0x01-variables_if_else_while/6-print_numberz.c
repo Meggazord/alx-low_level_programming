@@ -7,10 +7,10 @@
 */
 int main(void)
 {
-char n = '0';
-while (n <= '9')
+int n = 0;
+while (n < 10)
         {
-                putchar(n);
+                putchar(48 + n);
                 n++;
         }
 putchar('\n');

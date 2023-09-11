@@ -15,9 +15,9 @@ while (n <= 7)
 	{
 		while (x <= 9) 
 		{
-			putchar(n);
-			putchar(m);
-			putchar(x);
+			putchar(48 + n);
+			putchar(48 + m);
+			putchar(48 + x);
 			putchar(',');
 			putchar(' ');
 			x++;

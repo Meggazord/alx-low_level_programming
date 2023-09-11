@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * main - main block
 * Description: print all combination of 2 digit numbers
@@ -6,19 +7,19 @@
 */
 int main(void)
 {
-char n = '0';
-char m = '0';
-while (n <= '9')
+int n = 0;
+int m = 0;
+while (n <= 9)
 {
-	while (m <= '9')
+	while (m <= 9)
 	{
-		putchar(n);
-		putchar(m);
+		putchar(48 + n);
+		putchar(48 + m);
 		putchar(',');
 		putchar(' ');
 		m++;
 	}
-	m = '0';
+	m = 0;
 	n++;
 }
 putchar('\n');

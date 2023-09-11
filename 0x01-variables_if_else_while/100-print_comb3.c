@@ -22,7 +22,7 @@ while (n <= 8)
 		}
 		m++;
 	}
-	m = n+1;
+	m = n + 2;
 	n++;
 }
 putchar('\n');

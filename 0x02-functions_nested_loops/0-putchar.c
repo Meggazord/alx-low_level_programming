@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* main - prints "_putchar"
-* Return 0 for success
-*/
+ * main - Entry point, prints the string "_putchar"
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char c[] = "_putchar";

@@ -1,13 +1,14 @@
 #include "main.h"
 /**
- * main - check if number is positive or negarive
- * Return: 1 if positive, 0 if zero and -1 if negative.
- */
-int print_sign(int n);
+* print_sign - check if number is positive or negarive
+* @n: check value of n
+* Return: 1 if positive, 0 if zero and -1 if negative.
+*/
+int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar('+');	
+		_putchar('+');
 		return 1;
 	}
 	else if (n == 0)
@@ -25,5 +26,4 @@ int print_sign(int n);
 		_putchar('-');
                 return ('/';
         }
-
 }

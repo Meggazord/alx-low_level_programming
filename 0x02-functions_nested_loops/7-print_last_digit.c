@@ -1,19 +1,17 @@
+#include <stdio.h>
 #include "main.h"
 /**
-* print_last_digit - check if character is lowercase
-* @n: check value of n
-* Return: 1 if c is lower case. 0 otherwise.
+* main - prints "_putchar"
+* Return 0 for success
 */
-int print_last_digit(int n)
+int main(void)
 {
-	int last_digit;
+	char c[] = "_putchar";
+	int i;
+	int length = sizeof(c) - 1;
 
-	if (n < 0)
-		n = -n;
-
-	last_digit = n % 10;
-
-	_putchar(last_digit + '0');
-
-	return (last_digit);
+	for (i = 0; i < length; i++)
+		_putchar(c[i]);
+	_putchar('\n');
+	return (0);
 }

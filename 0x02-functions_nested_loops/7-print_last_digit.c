@@ -1,17 +1,23 @@
-#include <stdio.h>
 #include "main.h"
-/**
-* main - prints "_putchar"
-* Return 0 for success
-*/
-int main(void)
-{
-	char c[] = "_putchar";
-	int i;
-	int length = sizeof(c) - 1;
 
-	for (i = 0; i < length; i++)
-		_putchar(c[i]);
-	_putchar('\n');
-	return (0);
+/**
+ * print_last_digit - prints the last digit of a number
+ * @n: the int to extract the last digit from
+ * Return: value of the last digit
+ */
+int print_last_digit(int n)
+{
+	int a;
+
+	if (n < 0)
+		n = -n;
+
+	a = n % 10;
+
+	if (a < 0)
+		a = -a;
+
+	_putchar(a + '0');
+
+	return (a);
 }

@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - prints the alphabit.
- * Return: 0 on success.
+ * print_alphabet - Prints the lowercase alphabet followed by a newline
+ *
+ * Return: void
  */
 void print_alphabet(void)
 {

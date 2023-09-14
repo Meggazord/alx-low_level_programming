@@ -2,9 +2,8 @@
 /**
  * print_diagonal - check for a digit
  * @n : number of \\ to be printed
- * Return:void
+ * Return: void
  */
-
 void print_diagonal(int n)
 {
 	if (n <= 0)

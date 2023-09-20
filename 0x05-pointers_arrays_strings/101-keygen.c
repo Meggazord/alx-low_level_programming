@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(NULL));
 
-	while (number <= 2645)
+	while (password <= 2645)
 	{
 		p = rand() % 128;
 		password += p;

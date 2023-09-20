@@ -2,46 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - generate random password
+ * main - generates random password
  *
  * Return: 0
  */
-
-char randomUppercaseLetter() 
+int main(void)
 {
-	return 'A' + rand() % 26;
-}
-
-char randomDigit() 
-{
-	return '0' + rand() % 10;
-}
-
-int main() 
-{
-	int passwordLength = 8;
-	char password[passwordLength + 1]; 
-
+	int password;
+	char p;
 
 	srand(time(NULL));
 
-	for (int i = 0; i < passwordLength; i++) 
+	while (number <= 2645)
 	{
-		int choice = rand() % 2; 
-
-		if (choice == 0) 
-		{
-			password[i] = randomUppercaseLetter();
-		} 
-		else 
-		{
-			password[i] = randomDigit();
-		}
+		p = rand() % 128;
+		password += p;
+		putchar(p);
 	}
 
-	password[passwordLength] = '\0';
+	putchar(2772 - password);
 
-	printf("Generated Password: %s\n", password);
-
-	return 0;
+	return (0);
 }

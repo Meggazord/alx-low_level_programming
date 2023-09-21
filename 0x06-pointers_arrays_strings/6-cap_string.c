@@ -11,7 +11,9 @@ char *cap_string(char *str)
 	int new_word;
 
 	if (str[i] >= 'a' && str[i] <= 'z')
+	{
 		str[i] = str[i] - 32;
+	}
 
 	i++;
 
@@ -33,9 +35,7 @@ char *cap_string(char *str)
 			}
 			new_word = 0;
 		}
-
 		i++;
 	}
-
 	return (str);
 }

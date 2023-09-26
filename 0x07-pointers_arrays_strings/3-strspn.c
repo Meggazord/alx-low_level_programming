@@ -3,7 +3,7 @@
  * _strspn - Gets the length of a prefix substring
  * @s: Pointer to the string to be searched
  * @accept: Pointer to the string containing accepted characters
- * Return: The number of bytes in the initial segment of s consisting only of bytes from accept
+ * Return: number of bytes in initial segment of s consisting only of accept
  */
 unsigned int _strspn(char *s, char *accept)
 {

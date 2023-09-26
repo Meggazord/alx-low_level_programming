@@ -6,7 +6,6 @@
  * @c: the character to be located
  * Return: pointer character first occurrence location
  */
-
 char *_strchr(char *s, char c)
 {
 	int i = 0;
@@ -17,7 +16,6 @@ char *_strchr(char *s, char c)
 		{
 			return (&s[i]);
 		}
-
 		i++;
 	}
 

@@ -11,6 +11,9 @@ int is_prime_helper(int n, int x)
 	if (n <= 0)
 		return (0);
 
+	if (n == 1)
+		return (0);
+
 	if (x * x > n)
 		return (1);
 

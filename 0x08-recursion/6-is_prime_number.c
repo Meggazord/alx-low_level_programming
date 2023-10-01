@@ -12,7 +12,7 @@ int is_prime_helper(int n, int x)
 		return (0);
 
 	if (x * x > n)
-		return (n);
+		return (1);
 
 	if (n % x == 0)
 		return (0);

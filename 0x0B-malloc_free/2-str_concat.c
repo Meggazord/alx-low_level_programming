@@ -33,12 +33,10 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; i < len1; i++)
 		concatenated[i] = s1[i];
 
-	i++;
+	for (i = 0, i < len2; i++)
+		concatenated[len1 + i] = s2[i];
 
-	for (j = 0, j < len2; j++)
-		concatenated[i + j] = s2[j];
-
-	contcatenated[i + j] = '\0';
+	contcatenated[len1 + len2] = '\0';
 
 	return (concatenated);
 }

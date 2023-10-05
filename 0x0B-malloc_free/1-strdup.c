@@ -10,6 +10,7 @@
  */
 char *_strdup(char *str)
 {
+	int i;
 	int length;
 	char *duplicate;
 
@@ -30,7 +31,7 @@ char *_strdup(char *str)
 
 	if (duplicate != NULL)
 	{
-		for (int i = 0; i <= length; i++)
+		for (i = 0; i <= length; i++)
 		{
 			duplicate[i] = str[i];
 		}

@@ -39,14 +39,10 @@ char *str_concat(char *s1, char *s2)
 		concatenated[i] = s1[i];
 	}
 
-	i++;
-
 	for (j = 0; j < len2; j++)
 	{
 		concatenated[i + j] = s2[j];
 	}
-
-	j++;
 
 	concatenated[i + j] = '\0';
 

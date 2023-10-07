@@ -18,6 +18,4 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-
-	return (NULL);
 }

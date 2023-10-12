@@ -1,42 +1,45 @@
 #include <stdlib.h>
-#include <string.h>
 #include "dog.h"
-
 /**
- * new_dog - Creates a new dog structure
- * @name: Name of the dog
- * @age: Age of the dog
- * @owner: Owner of the dog
- *
- * Return: Pointer to the new dog structure, or NULL if function fails
+ * new_dog - creates a new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ * Return: pointer to a new dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog_ptr;
+	unsigned int nl, ol, i;
+	dog_t *dog;
 
-	new_dog_ptr = malloc(sizeof(dog_t));
-
-	if (new_dog_ptr == NULL)
+	if (name == NULL || owner == NULL)
 		return (NULL);
-
-	new_dog_ptr->name = strdup(name);
-
-	if (new_dog_ptr->name == NULL)
+	dog = malloc(sizeof(dog_t));
+	if (dog == NULL)
+		return (NULL);
+	for (nl = 0; name[nl]; nl++)
+		;
+	nl++;
+	dog->name = malloc(nl * sizeof(char));
+	if (dog->name == NULL)
 	{
-		free(new_dog_ptr);
+		free(dog);
 		return (NULL);
 	}
-
-	new_dog_ptr->owner = strdup(owner);
-
-	if (new_dog_ptr->owner == NULL)
+	for (i = 0; i < nl; i++)
+		dog->name[i] = name[i];
+	dog->age = age;
+	for (ol = 0; owner[ol]; ol++)
+		;
+	ol++;
+	dog->owner = malloc(ol * sizeof(char));
+	if (dog->owner == NULL)
 	{
-		free(new_dog_ptr->name);
-		free(new_dog_ptr);
+		free(dog->name);
+		free(dog);
 		return (NULL);
 	}
-
-	new_dog_ptr->age = age;
-
-	return (new_dog_ptr);
+	for (i = 0; i < ol; i++)
+		dog->owner[i] = owner[i];
+	return (dog);
 }

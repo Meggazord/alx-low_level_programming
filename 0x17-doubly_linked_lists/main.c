@@ -58,23 +58,3 @@ int main()
     print_dlistint(head);
     return (0);
 }
-
-dlistint_t *addToEmpty(dlistint_t *head, int n)
-{
-    dlistint_t *temp = malloc(sizeof(dlistint_t));
-
-    if (temp == NULL)
-    {
-        fprintf(stderr, "Memory allocation failed.\n");
-        return (NULL);
-    }
-
-    temp->prev = NULL;
-    temp->n = n;
-    temp->next = NULL;
-
-    if (head == NULL)
-        head = temp;
-
-    return (head);
-}
